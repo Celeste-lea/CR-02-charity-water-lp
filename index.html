@@ -5,8 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charity Water Landing Page</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- This link loads the Noto Serif Dives Akuru font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Dives+Akuru&display=swap" rel="stylesheet">
+    <style>
+      /* Use Noto Serif Dives Akuru for the whole page */
+      body {
+        font-family: 'Noto Serif Dives Akuru', serif;
+      }
+    </style>
 </head>
 <body>
-    <!-- Add your HTML here -->
+    <!-- Navigation bar at the top of the page -->
+    <nav class="navbar">
+        <!-- Logo image on the far left side -->
+        <img src="img/cw_logo-2.png" alt="Charity Water Logo 2" class="nav-logo">
+        <!-- Navigation links -->
+        <a href="#">Stories</a>
+        <a href="#">Why Water?</a>
+        <a href="#">Impact</a>
+        <a href="#">Donate</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <!-- Cream space between navbar and hero image -->
+    <div class="spacer"></div>
+    <!-- Hero section with an image using a hero-image div -->
+    <div class="hero-image-section">
+        <!-- Title text over the image, on the left side, DM Serif Display font -->
+        <div class="hero-image-text">
+            <span class="hero-title">
+                CLEAN<br>WATER<br>CHANGES<br>
+                <span class="hero-title-em">Everything.</span>
+            </span>
+        </div>
+        <img src="img/WaterHands.jpg" alt="Hands holding water" style="width:100%; display:block; border-radius: 12px;">
+    </div>
+    <!-- Cream space between hero image and banner -->
+    <div class="spacer"></div>
+    <!-- Banner section with a background color and image overlay -->
+    <div class="banner">
+        <!-- Banner text content on the left -->
+        <div class="banner-content">
+            <!-- Remove the headline -->
+            <!-- Add the larger, raised subheadline -->
+            <div class="banner-main-message">
+                Clean, safe water is the foundation for health, equity, and opportunity and yet 1 in 10 people worldwide are without that basic, human need. <em>We can change that.</em>
+            </div>
+        </div>
+        <!-- Banner image overlay on the right -->
+        <div class="banner-image-overlay"></div>
+        <!-- Removed the image that overlays the yellow banner -->
+    </div>
+    <!-- Call to Action section below the banner -->
+    <section class="cta-section">
+        <div class="cta-section-content">
+            <!-- Header for the call to action -->
+            <h1>Charity: Water funds clean water projects with 100% of your donation—no overhead, just impact.</h1>
+            <!-- Subheading for more details -->
+            <h2>Your $10 brings safe drinking water to 3 people in need for a year, and you’ll see exactly how your gift changes lives. Because clean water isn't just a basic need—it’s the first step toward health, education, and opportunity.</h2>
+            <!-- Donation button for users to click -->
+            <a href="#" class="donate-btn">Donate Now</a>
+        </div>
+        <!-- Image fills the right half (eastern hemisphere) of the CTA section -->
+        <img src="img/Screenshot 2025-05-25 211513.png" alt="Impact Example" class="cta-img-east">
+    </section>
+    <!-- Link to the JavaScript file for interactivity -->
+    <script src="script.js"></script>
+    <!-- Footer section at the bottom of the page -->
+    <footer class="footer">
+        <p>&copy; 2024 Charity: Water. All rights reserved.</p>
+    </footer>
 </body>
 </html>

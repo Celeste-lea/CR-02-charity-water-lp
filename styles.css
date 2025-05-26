@@ -1,3 +1,12 @@
+/* 
+   This file controls how your website looks.
+   You can change colors, fonts, and layout here.
+*/
+
+/* These are the brand colors and fonts for charity: water.
+   You can use these colors in your styles if you want your site to match the brand.
+*/
+
 /* charity: water Brand Colors & Fonts
 
 Primary Colors:
@@ -17,3 +26,439 @@ Fonts:
 - Avenir
 
 */
+
+/* 
+   Use the Noto Serif Dives Akuru font for all text on the page.
+   If the font is not available, the browser will use a default serif font.
+*/
+body {
+    font-family: 'Noto Serif Dives Akuru', serif;
+    background-color: var(--cream); /* Set the page background to cream */
+}
+
+/* Cream color for borders */
+:root {
+    --cream: #FFFDD0;
+}
+
+/* 
+   The hero section uses a background image, centers the text, and adds space.
+*/
+.hero {
+    /* Set the background image for the hero section */
+    background-image: url('WaterCups.jpg');
+    /* Make the image cover the whole hero section */
+    background-size: cover;
+    /* Center the background image */
+    background-position: center;
+    /* Removed background-color so the image is fully visible */
+    /* Set the text color to white for contrast */
+    color: #ffc907;
+    /* Center the text horizontally */
+    text-align: center;
+    /* Add space above and below the text */
+    padding: 80px 20px;
+    /* Make the hero section stretch across the page */
+    width: 100%;
+    /* Make sure content is readable on top of the image */
+    box-sizing: border-box;
+    /* Add a border around the hero section */
+    border: 8px solid var(--cream); /* Thicker cream border */
+    margin: 32px 0; /* Add space above and below the hero section */
+}
+
+/* Make the main headline bigger and bold */
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Make the subheadline a bit bigger */
+.hero h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+/* 
+   Style for the navigation bar at the top of the page.
+*/
+.navbar {
+    /* Set background color to charity: water blue */
+    background-color: #2E9DF7;
+    /* Add some space inside the navbar */
+    padding: 10px 0;
+    /* Center the links horizontally */
+    text-align: center;
+    border: 8px solid var(--cream); /* Thicker cream border */
+    margin: 32px 0; /* Add space above and below the navbar */
+}
+
+/* Style for the navigation links */
+.navbar a {
+    /* Set link color to white */
+    color: white;
+    /* Remove underline from links */
+    text-decoration: none;
+    /* Add space between links */
+    margin: 0 15px;
+    /* Make the text a bit bigger */
+    font-size: 1.1em;
+    /* Align links with the logo */
+    vertical-align: middle; 
+}
+
+/* Change link color when hovered */
+.navbar a:hover {
+    color: #FFC907; /* charity: water yellow */
+}
+
+/* Style for the logo image in the navbar */
+.nav-logo {
+    /* Set the logo height */
+    height: 20px;
+    /* Align the logo with the links */
+    vertical-align: middle;
+    /* Add some space to the right of the logo */
+    margin-right: 20px;
+    /* Place the logo at the start of the navbar */
+    display: inline-block;
+}
+
+/* 
+   Style for the call to action (CTA) section below the hero.
+*/
+.cta-section {
+    /* Add space above and below the section */
+    padding: 40px 20px;
+    /* Make the background color span the full width */
+    width: 100%;
+    background-color: #003366;
+    color: white;
+    font-size: 1.3em;
+    /* Remove max-width and margin settings from the section itself */
+    text-align: left;
+    border: 8px solid var(--cream); /* Thicker cream border */
+    margin: 32px 0; /* Add space above and below the CTA section */
+    position: relative;
+    overflow: visible;
+}
+
+/* Add a container inside the CTA section to control text width */
+.cta-section-content {
+    max-width: 50%;
+    margin-left: 0;
+    margin-right: auto;
+    position: relative;
+    z-index: 1; /* Make sure text is above the blue background */
+}
+
+/* Make the CTA header stand out */
+.cta-section h1 {
+    font-size: 1.5em;
+    color: white; /* Make header text white */
+    margin-bottom: 15px;
+}
+
+/* Style the CTA subheading */
+.cta-section h2 {
+    font-size: 1em;
+    color: white; /* Make subheading text white */
+    font-weight: normal;
+}
+
+/* Style for the donation button in the CTA section */
+.donate-btn {
+    /* Charity: water yellow background */
+    background-color: #FFC907;
+    /* Make the text blue for contrast */
+    color: #003366;
+    /* Remove underline from the link */
+    text-decoration: none;
+    /* Add padding to make it look like a button */
+    padding: 15px 30px;
+    /* Make the button text a bit bigger */
+    font-size: 1.2em;
+    /* Round the corners */
+    border-radius: 6px;
+    /* Add some space above the button */
+    margin-top: 20px;
+    /* Make the button bold */
+    font-weight: bold;
+    /* Display as inline-block so margin works */
+    display: inline-block;
+    /* Add a little shadow for effect */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    /* Smooth transition for hover effect */
+    transition: background 0.2s, color 0.2s;
+}
+
+/* Change button color on hover */
+.donate-btn:hover {
+    background-color: #2E9DF7; /* charity: water blue */
+    color: #fff;
+}
+
+/* 
+   The banner section uses a background image, centers the text, and adds space.
+   We use WaterCups.jpg as the background image for the banner.
+*/
+.banner {
+    background-color: #FFC907;
+    color: #ffc907;
+    text-align: center;
+    /* Decrease the height by reducing padding */
+    padding: 32px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 8px solid var(--cream);
+    margin: 64px 0 32px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Center the banner text content */
+.banner-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;           /* Center the text inside the banner */
+    max-width: 100%;
+    padding-right: 0;
+    color: #003366;
+}
+
+/* Image fills the right (eastern) half of the banner */
+.banner-img-east {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 0 12px 12px 0;
+    z-index: 2;
+    /* Optional: add a subtle shadow for separation */
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    background: white;
+}
+
+/* Image fills the right (eastern) half of the CTA section and spills over the border */
+.cta-img-east {
+    position: absolute;
+    top: -32px;      /* Move image up to spill over the top border */
+    right: -32px;    /* Move image right to spill over the right border */
+    height: calc(100% + 64px); /* Make image taller to spill over top and bottom */
+    width: 52%;      /* Slightly wider to spill over the right edge */
+    object-fit: cover;
+    border-radius: 0 24px 24px 0; /* More rounded on the outside edge */
+    z-index: 2;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    background: white;
+    /* No overflow hidden so image can spill outside the section */
+    pointer-events: none; /* Prevent image from blocking button clicks */
+}
+
+/* Make sure the CTA section allows overflow for the image to spill out */
+.cta-section {
+    position: relative;
+    overflow: visible; /* Allow image to spill out */
+    /* Add space above and below the section */
+    padding: 40px 20px;
+    /* Make the background color span the full width */
+    width: 100%;
+    background-color: #003366;
+    color: white;
+    font-size: 1.3em;
+    /* Remove max-width and margin settings from the section itself */
+    text-align: left;
+    border: 8px solid var(--cream); /* Thicker cream border */
+    margin: 32px 0; /* Add space above and below the CTA section */
+    position: relative;
+    overflow: visible;
+}
+
+/* Responsive: On small screens, hide the banner image and use full width for text */
+@media (max-width: 900px) {
+    .banner-img-east {
+        display: none;
+    }
+    .cta-img-east {
+        display: none;
+    }
+}
+
+/* Responsive: On small screens, hide the overlay image and use full width for text */
+@media (max-width: 600px) {
+    .banner {
+        padding: 40px 10px;
+    }
+    .banner h1 {
+        font-size: 1.5em;
+    }
+    .banner h2 {
+        font-size: 1em;
+    }
+    .banner-image-overlay {
+        display: none;
+    }
+    .banner-content {
+        max-width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    /* Make the hero section padding smaller on small screens */
+    .hero {
+        padding: 40px 10px;
+    }
+    .hero h1 {
+        font-size: 1.5em;
+    }
+    .hero h2 {
+        font-size: 1em;
+    }
+
+    /* Stack navbar links vertically and make them bigger for touch */
+    .navbar {
+        padding: 10px 0;
+    }
+    .navbar a {
+        display: block;
+        margin: 10px 0;
+        font-size: 1.2em;
+    }
+    .nav-logo {
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    /* Make the CTA section and its content fit small screens */
+    .cta-section-content {
+        max-width: 100%;
+    }
+}
+
+/* Image on the right side of the CTA section */
+.cta-image-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* Take up the entire right (eastern) half of the section */
+    width: 50%;
+    height: 100%;
+    object-fit: cover; /* Make sure the image covers the area */
+    z-index: 2;
+    border-radius: 0 12px 12px 0;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    background: white;
+}
+
+/* New hero image section with a border */
+.hero-image-section img {
+    border: 8px solid var(--cream);
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 400px;
+    object-fit: cover;
+    /* Move the image down to show more of the bottom and less of the top */
+    object-position: center 70%;
+}
+
+/* Style for text over the hero image, positioned on the left (western hemisphere) */
+.hero-image-text {
+    position: absolute;
+    top: 43%;
+    left: 2%;
+    transform: translateY(-50%);
+    color: #FFC907;
+    max-width: 45%;
+    text-align: left;
+    z-index: 2;
+}
+
+/* Title style for hero image, using DM Serif Display font */
+.hero-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 7em;           /* Slightly larger */
+    font-weight: bold;
+    color: #FFC907;
+    margin-bottom: 0.5em;
+    text-transform: capitalize;
+    line-height: 1.25;        /* More space between lines */
+    display: block;
+}
+
+.hero-title-em {
+    display: block;
+    font-style: italic;
+    font-size: 3em; /* 3em larger than the base hero-title */
+    font-weight: bold;
+    color: #FFC907;
+    margin-top: 0.2em;
+    line-height: 1.1;
+}
+
+/* Responsive: On small screens, make text smaller and centered */
+@media (max-width: 600px) {
+    .hero-image-text {
+        font-size: 1em;
+        left: 10%;
+        max-width: 80%;
+        text-align: center;
+    }
+    .hero-title {
+        font-size: 1.5em;
+    }
+    .hero-title-em {
+        font-size: 3em;
+    }
+}
+
+/* Style for the hero title and subheading */
+.hero-title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #FFC907;
+    margin-bottom: 0.5em;
+    text-transform: capitalize; /* Title format */
+}
+
+.hero-subheading {
+    font-size: 1em; /* Smaller than the title */
+    color: #FFC907;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+
+/* Simple footer style for the bottom of the page */
+.footer {
+    background-color: #2E9DF7; /* Charity: water blue */
+    color: #fff;               /* White text */
+    text-align: center;        /* Center the text */
+    padding: 20px 0;           /* Space above and below the text */
+    font-size: 1em;            /* Normal font size */
+    margin-top: 40px;          /* Space above the footer */
+}
+
+/* Make the main message in the banner bigger and raise it up */
+.banner-main-message {
+    font-size: 2em;         /* Make the text larger */
+    font-weight: bold;
+    color: #003366;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    position: relative;
+    top: -30px;             /* Raise the text up in the banner */
+    line-height: 1.3;
+    max-width: 90%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
